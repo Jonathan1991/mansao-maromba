@@ -402,15 +402,16 @@
 
 .hero__can-wrapper {
   position: relative;
-  width: 280px;
-  height: 480px;
+  width: 100%;
+  max-width: 280px;
+  height: 420px;
   z-index: 2;
   perspective: 1000px;
 }
 
 @media (min-width: 768px) {
   .hero__can-wrapper {
-    width: 320px;
+    max-width: 320px;
     height: 550px;
   }
 }

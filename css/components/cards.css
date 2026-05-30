@@ -363,3 +363,11 @@
 .comparison-table td .status-icon--cross {
   color: var(--color-neon-red);
 }
+
+@media (max-width: 576px) {
+  .comparison-table th, 
+  .comparison-table td {
+    padding: 0.85rem 1rem;
+    font-size: 0.85rem;
+  }
+}
