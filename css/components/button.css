@@ -14,6 +14,15 @@
   transition: var(--transition-normal);
   z-index: 1;
   cursor: pointer;
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 1.5rem;
+  }
 }
 
 /* Botão Neon Verde (Principal) */

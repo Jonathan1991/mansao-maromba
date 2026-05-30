@@ -51,6 +51,15 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1150px) {
+  .header__links {
+    gap: 1rem;
+  }
+  .header__link {
+    font-size: 0.85rem;
+  }
+}
+
 .header__link {
   font-size: 0.95rem;
   font-weight: 600;
