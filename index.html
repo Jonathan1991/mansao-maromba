@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mansão Maromba é o energético premium desenvolvido para atletas e praticantes de musculação que exigem foco cirúrgico, força máxima e energia extrema sem crash de açúcar.">
+  <meta name="keywords" content="energético, mansao maromba, suplemento, treino, musculação, crossfit, foco, energia premium">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mansaomaromba.com.br/">
+  <meta property="og:title" content="Mansão Maromba - O Sabor Energético Premium">
+  <meta property="og:description" content="Desenvolvido para alta performance. Foco cirúrgico e energia instantânea para os seus treinos mais intensos.">
+  <meta property="og:image" content="images/hero_bg.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mansaomaromba.com.br/">
+  <meta property="twitter:title" content="Mansão Maromba - O Sabor Energético Premium">
+  <meta property="twitter:description" content="Desenvolvido para alta performance. Foco cirúrgico e energia instantânea para os seus treinos mais intensos.">
+  <meta property="twitter:image" content="images/hero_bg.png">
+
+  <title>Mansão Maromba | O Sabor Energético Premium</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/maromba_can.png">
+
+  <!-- Hojas de Estilo Componentizadas -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/testimonials.css">
+  <link rel="stylesheet" href="css/components/faq.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+
+  <!-- Canvas de partículas interativo para efeito visual de energia -->
+  <canvas id="energy-canvas"></canvas>
+
+  <!-- --- HEADER & NAVIGATION --- -->
+  <header class="header">
+    <div class="container header__nav">
+      <a href="#inicio" class="header__logo" aria-label="Mansão Maromba Home">
+        MANSÃO<span>MAROMBA</span><span class="header__logo-dot">.</span>
+      </a>
+      
+      <ul class="header__links">
+        <li><a href="#beneficios" class="header__link">Benefícios</a></li>
+        <li><a href="#sobre" class="header__link">Fórmula</a></li>
+        <li><a href="#destaques" class="header__link">Destaques</a></li>
+        <li><a href="#depoimentos" class="header__link">Depoimentos</a></li>
+        <li><a href="#comparacao" class="header__link">Comparativo</a></li>
+        <li><a href="#faq" class="header__link">FAQ</a></li>
+      </ul>
+
+      <a href="#comprar" class="btn btn--neon-green btn--pulse header__cta" id="nav-cta-btn">Comprar Agora</a>
+
+      <button class="header__toggle" aria-label="Abrir Menu" aria-expanded="false" id="menu-toggle-btn">
+        <span class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- MOBILE MENU --- -->
+  <nav class="mobile-menu" aria-hidden="true" id="mobile-navigation">
+    <a href="#beneficios" class="mobile-menu__link">Benefícios</a>
+    <a href="#sobre" class="mobile-menu__link">Fórmula</a>
+    <a href="#destaques" class="mobile-menu__link">Destaques</a>
+    <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
+    <a href="#comparacao" class="mobile-menu__link">Comparativo</a>
+    <a href="#faq" class="mobile-menu__link">FAQ</a>
+    <a href="#comprar" class="btn btn--neon-green btn--pulse" style="width: 80%; max-width: 300px;">Comprar Agora</a>
+  </nav>
+
+  <!-- --- HERO SECTION --- -->
+  <section id="inicio" class="hero">
+    <!-- Video de Fundo com Poster de Fallback de Alta Performance -->
+    <video autoplay muted loop playsinline class="hero__bg-video" poster="images/hero_bg.png">
+      <source src="images/lataexplodindo.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span> FÓRMULA ATUALIZADA 2026
+        </div>
+        <h1 class="hero__title font-title">
+          DESPERTE A SUA <br><span class="text-neon-green">FORÇA BRUTA</span>
+        </h1>
+        <p class="hero__slogan">"O sabor energético"</p>
+        <p class="hero__description">
+          A dose extrema de foco mental, resistência insana e energia explosiva que seu corpo precisa para ultrapassar todos os limites no treino. Zero açúcar. Zero limites.
+        </p>
+        <div class="hero__actions">
+          <a href="#comprar" class="btn btn--neon-green btn--pulse" id="hero-buy-btn">
+            Comprar Agora
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#sobre" class="btn btn--neon-red" id="hero-try-btn">Experimentar Fórmula</a>
+        </div>
+        
+        <div class="hero__trust">
+          <div class="hero__trust-avatars">
+            <img src="images/avatar_1.png" alt="Atleta" class="hero__trust-avatar">
+            <img src="images/avatar_2.png" alt="Atleta" class="hero__trust-avatar">
+            <img src="images/avatar_3.png" alt="Atleta" class="hero__trust-avatar">
+          </div>
+          <div class="hero__trust-info">
+            <div class="hero__trust-stars">★★★★★</div>
+            <p class="hero__trust-text">Aprovado por +10.000 atletas de elite</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__glow-circle"></div>
+        <div class="hero__can-wrapper">
+          <img src="images/maromba_can.png" alt="Lata de energético premium Mansão Maromba com detalhes verde neon e vermelho" class="hero__can-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- BENEFÍCIOS SECTION --- -->
+  <section id="beneficios" class="benefits-section reveal">
+    <div class="container">
+      <h2 class="section-title">BENEFÍCIOS <span>EXTREMOS</span></h2>
+      <div class="benefits__grid">
+        
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Lightning Bolt SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <h3 class="benefit-card__title">Energia Instantânea</h3>
+          <p class="benefit-card__text">
+            Absorção ultra-rápida. Sinta uma onda de energia imediata percorrer seu corpo logo nos primeiros goles, ideal para pré-treinos intensos.
+          </p>
+        </article>
+
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Target SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h3 class="benefit-card__title">Foco Prolongado</h3>
+          <p class="benefit-card__text">
+            Concentração de nível cirúrgico. Nossa sinergia entre cafeína pura e aminoácidos mantém sua mente afiada sem oscilações de foco.
+          </p>
+        </article>
+
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Shield SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="benefit-card__title">Mais Resistência</h3>
+          <p class="benefit-card__text">
+            Retarde a fadiga de forma consistente. Ingredientes ativos ajudam na regulação do pH muscular, permitindo mais repetições e treinos mais longos.
+          </p>
+        </article>
+
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Activity/Heart SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <h3 class="benefit-card__title">Melhor Desempenho</h3>
+          <p class="benefit-card__text">
+            Eleve sua potência muscular. Potencialize a vasodilatação periférica e otimize o transporte de nutrientes essenciais para as células.
+          </p>
+        </article>
+
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Flame SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+          </div>
+          <h3 class="benefit-card__title">Sabor Diferenciado</h3>
+          <p class="benefit-card__text">
+            O fim do gosto medicinal. Uma fórmula refrescante criada com aromas premium para trazer o autêntico sabor marcante e hardcore.
+          </p>
+        </article>
+
+        <article class="benefit-card glassmorphism">
+          <div class="benefit-card__icon-box">
+            <!-- Battery SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="11" x2="23" y2="13"></line><line x1="6" y1="12" x2="14" y2="12"></line></svg>
+          </div>
+          <h3 class="benefit-card__title">Recuperação Acelerada</h3>
+          <p class="benefit-card__text">
+            Combate ativo à fadiga. Nutrientes focados na regeneração e reposição de eletrólitos essenciais, preparando você mais rápido para o próximo desafio.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SOBRE O PRODUTO SECTION --- -->
+  <section id="sobre" class="about-section reveal">
+    <div class="container about__grid">
+      <div class="about__content">
+        <span class="about__subtitle">Fórmula Sinérgica Premium</span>
+        <h2 class="about__title">O QUE TORNA O MANSÃO MAROMBA <span class="text-neon-red">IMBATÍVEL?</span></h2>
+        <p class="about__text">
+          Mansão Maromba não é um refrigerante com cafeína. É um sistema avançado de performance desenvolvido em laboratório para fornecer estimulação física e cerebral contínua. Nossa combinação selecionada de cafeína anidra, taurina ultra-pura e complexo vitamínico atua diretamente nos receptores de fadiga do corpo.
+        </p>
+        <p class="about__text" style="margin-top: -1rem; margin-bottom: 2rem;">
+          Seja você um bodybuilder esmagando cargas pesadas, um crossfiteiro em WODs intensos ou um profissional de alta performance focado em prazos insanos: Mansão Maromba é o seu combustível diário.
+        </p>
+        
+        <ul class="about__features">
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> 200mg de Cafeína Anidra
+          </li>
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> 1500mg de Taurina Pura
+          </li>
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> Zero Açúcares & Baixo Sódio
+          </li>
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> Enriquecido com Vitaminas B6 e B12
+          </li>
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> Adição de Eletrólitos Hidratantes
+          </li>
+          <li class="about__feature-item">
+            <span class="about__feature-icon">✓</span> Rápida Termogênese Ativa
+          </li>
+        </ul>
+      </div>
+
+      <div class="about__media">
+        <div class="about__glow-border"></div>
+        <div class="about__img-wrapper">
+          <img src="images/fitness_about.png" alt="Atleta fitness com raios neon treinando pesado em uma academia futurista" class="about__img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- DESTAQUES / METRICAS SECTION --- -->
+  <section id="destaques" class="stats-section reveal">
+    <div class="container stats__grid">
+      
+      <div class="stat-item">
+        <div class="stat-item__number font-title" data-target="95" data-suffix="%">+0%</div>
+        <div class="stat-item__label">Satisfação Hardcore</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-item__number font-title" data-target="10000" data-prefix="+">+0</div>
+        <div class="stat-item__label">Consumidores Ativos</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-item__number font-title" data-target="500" data-prefix="+">+0</div>
+        <div class="stat-item__label">Academias Parceiras</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-item__number font-title" data-target="1000000" data-prefix="+">+0</div>
+        <div class="stat-item__label">Latas Consumidas</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- DEPOIMENTOS SECTION --- -->
+  <section id="depoimentos" class="testimonials-section reveal">
+    <div class="container">
+      <h2 class="section-title">QUEM CONSOME, <span>APROVA</span></h2>
+      <div class="testimonials__grid">
+        
+        <article class="testimonial-card glassmorphism">
+          <div>
+            <div class="testimonial-card__header">
+              <img src="images/avatar_1.png" alt="Thiago Silva" class="testimonial-card__avatar">
+              <div class="testimonial-card__author-info">
+                <h3 class="testimonial-card__name">Thiago Silva</h3>
+                <span class="testimonial-card__city">São Paulo - SP</span>
+              </div>
+            </div>
+            <div class="testimonial-card__rating">★★★★★</div>
+            <p class="testimonial-card__comment">
+              "Treino musculação há 6 anos e já tomei tudo que é pré-treino. O Mansão Maromba é diferente, o foco bate em minutos e dura o treino inteiro, sem dar taquicardia ou aquele crash clássico depois. Virou meu companheiro oficial de leg day."
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial-card glassmorphism">
+          <div>
+            <div class="testimonial-card__header">
+              <img src="images/avatar_2.png" alt="Mariana Costa" class="testimonial-card__avatar">
+              <div class="testimonial-card__author-info">
+                <h3 class="testimonial-card__name">Mariana Costa</h3>
+                <span class="testimonial-card__city">Rio de Janeiro - RJ</span>
+              </div>
+            </div>
+            <div class="testimonial-card__rating">★★★★★</div>
+            <p class="testimonial-card__comment">
+              "No CrossFit a resistência é fundamental. Tomo uma lata bem gelada de Mansão Maromba 15 minutos antes do WOD e o rendimento sobe muito. Além disso, o sabor verde neon é disparado o melhor do mercado, zero gosto de remédio."
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial-card glassmorphism">
+          <div>
+            <div class="testimonial-card__header">
+              <img src="images/avatar_3.png" alt="Rodrigo Santos" class="testimonial-card__avatar">
+              <div class="testimonial-card__author-info">
+                <h3 class="testimonial-card__name">Rodrigo Santos</h3>
+                <span class="testimonial-card__city">Belo Horizonte - MG</span>
+              </div>
+            </div>
+            <div class="testimonial-card__rating">★★★★★</div>
+            <p class="testimonial-card__comment">
+              "Como Personal Trainer, preciso de energia constante o dia todo e foco para acompanhar meus alunos. O Mansão Maromba me mantém ativo, focado e com disposição de sobra sem açúcar. Recomendo de olhos fechados para meus clientes."
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial-card glassmorphism">
+          <div>
+            <div class="testimonial-card__header">
+              <img src="images/avatar_4.png" alt="Camila Alves" class="testimonial-card__avatar">
+              <div class="testimonial-card__author-info">
+                <h3 class="testimonial-card__name">Camila Alves</h3>
+                <span class="testimonial-card__city">Curitiba - PR</span>
+              </div>
+            </div>
+            <div class="testimonial-card__rating">★★★★★</div>
+            <p class="testimonial-card__comment">
+              "Eu trabalho programando à noite e treino logo cedo. O Mansão Maromba é fantástico para focar nos códigos de madrugada e ainda ter gás de sobra para agachar com 100kg logo pela manhã. Energia limpa de verdade!"
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- COMPARAÇÃO COM CONCORRENTES SECTION --- -->
+  <section id="comparacao" class="comparison-section reveal">
+    <div class="container">
+      <h2 class="section-title">COMPARAÇÃO DE <span>DESEMPENHO</span></h2>
+      
+      <div class="comparison__table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th style="color: var(--color-neon-green);">MANSÃO MAROMBA</th>
+              <th>Energéticos Comuns</th>
+              <th>Café Simples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlighted-row">
+              <td>Foco Físico e Mental</td>
+              <td class="highlighted-cell">Extremo (Sinérgio)</td>
+              <td>Moderado a Baixo</td>
+              <td>Curto Prazo</td>
+            </tr>
+            <tr>
+              <td>Teor de Taurina Pura</td>
+              <td class="highlighted-cell">1500mg</td>
+              <td>1000mg ou menos</td>
+              <td>0mg</td>
+            </tr>
+            <tr class="highlighted-row">
+              <td>Crash / Rebote de Cansaço</td>
+              <td class="highlighted-cell">NÃO (Zero Açúcar)</td>
+              <td>SIM (Alto Açúcar)</td>
+              <td>Parcial</td>
+            </tr>
+            <tr>
+              <td>Sabor Refreshing</td>
+              <td class="highlighted-cell">Premium Marcante</td>
+              <td>Artificial / Químico</td>
+              <td>Amargo</td>
+            </tr>
+            <tr class="highlighted-row">
+              <td>Custo-Benefício</td>
+              <td class="highlighted-cell">Excelente</td>
+              <td>Médio</td>
+              <td>Baixo</td>
+            </tr>
+            <tr>
+              <td>Eletrólitos Hidratantes</td>
+              <td class="highlighted-cell">Sim (Sódio + Potássio)</td>
+              <td>Não</td>
+              <td>Não</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FAQ SECTION --- -->
+  <section id="faq" class="faq-section reveal">
+    <div class="container">
+      <h2 class="section-title">PERGUNTAS <span>FREQUENTES</span></h2>
+      <div class="faq__container">
+        
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Possui açúcar na fórmula?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Não. O Mansão Maromba é formulado com zero adição de açúcares, sendo adoçado com edulcorantes premium de última geração, o que evita picos de insulina no sangue e impede o famoso "crash" (queda brusca de energia) após o consumo.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Pode ser consumido como pré-treino?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Sim! Ele foi especialmente desenvolvido para isso. Recomenda-se o consumo de 15 a 30 minutos antes do treino de musculação, corrida ou crossfit para garantir o máximo de absorção da cafeína, taurina e eletrólitos na sua musculatura.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Quantas latas posso consumir por dia?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Recomendamos o consumo de no máximo 2 latas ao dia, preferencialmente com intervalos regulados. Evite o consumo em períodos próximos ao sono (até 6 horas antes de dormir) para não interferir na qualidade do seu descanso noturno.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Qual a quantidade de cafeína por lata?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Cada lata de Mansão Maromba de 473ml contém exatamente 200mg de cafeína anidra de alta absorção. Essa dosagem é ideal para melhorar o estado de alerta, aumentar a potência e acelerar o foco cognitivo de atletas e profissionais.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Gestantes ou hipertensos podem tomar?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Por ser um produto com alto teor de cafeína estimulante, não é recomendado o consumo por gestantes, lactantes, crianças, idosos ou pessoas sensíveis à cafeína/cardiopatas. Em caso de dúvidas, consulte sempre o seu médico ou nutricionista.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            O Mansão Maromba quebra o jejum intermitente?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer-wrapper">
+            <p class="faq-item__answer">
+              Não. Por ter calorias praticamente irrelevantes e ser zero açúcar, ele não eleva os níveis de glicose no sangue nem induz a liberação de insulina, sendo seguro para quem pratica protocolo de jejum intermitente focado em emagrecimento ou foco.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- CTA FINAL SECTION --- -->
+  <section id="comprar" class="cta-final-section reveal">
+    <div class="container cta-final__container">
+      <h2 class="cta-final__title font-title">
+        TRANSFORME SUA ENERGIA EM <br><span class="text-neon-green">RESULTADOS REAIS</span>
+      </h2>
+      <span class="cta-final__offer">OFERTA DE LANÇAMENTO: 20% OFF + FRETE GRÁTIS</span>
+      
+      <!-- Countdown timer -->
+      <div class="countdown">
+        <div class="countdown__item">
+          <span class="countdown__number" id="hours">02</span>
+          <span class="countdown__label">Horas</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__number" id="minutes">14</span>
+          <span class="countdown__label">Minutos</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__number" id="seconds">45</span>
+          <span class="countdown__label">Segundos</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+        <button class="btn btn--neon-green btn--pulse" style="font-size: 1.25rem; padding: 1.25rem 3rem;" id="cta-buy-pack-btn">
+          QUERO MEU PACK DE PERFORMANCE
+        </button>
+        <p style="font-size: 0.85rem; color: var(--text-gray-mid); margin-top: 0.5rem;">
+          ⚠️ Apenas restam 37 unidades deste lote com desconto promocional ativo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__logo">
+          MANSÃO<span>MAROMBA</span><span class="footer__logo-dot">.</span>
+        </a>
+        <p class="footer__description">
+          O energético premium feito sob medida para quem busca treinar no limite extremo e dominar o foco em alta performance.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__title">Navegação</h3>
+        <ul class="footer__links">
+          <li><a href="#beneficios" class="footer__link">Benefícios</a></li>
+          <li><a href="#sobre" class="footer__link">Fórmula</a></li>
+          <li><a href="#destaques" class="footer__link">Destaques</a></li>
+          <li><a href="#depoimentos" class="footer__link">Depoimentos</a></li>
+          <li><a href="#comparacao" class="footer__link">Comparação</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">Suporte</h3>
+        <ul class="footer__links">
+          <li><a href="#faq" class="footer__link">Perguntas Frequentes</a></li>
+          <li><a href="#comprar" class="footer__link">Onde Comprar</a></li>
+          <li><a href="mailto:contato@mansaomaromba.com.br" class="footer__link">contato@mansaomaromba.com.br</a></li>
+          <li><a href="tel:+551199999999" class="footer__link">(11) 9999-9999</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="footer__copy">
+        &copy; 2026 Mansão Maromba. Todos os direitos reservados. Desenvolvido para fins fictícios de portfólio.
+      </p>
+      <div class="footer__legal-links">
+        <a href="#" class="footer__legal-link">Termos de Uso</a>
+        <a href="#" class="footer__legal-link">Políticas de Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+    <span class="whatsapp-btn__tooltip">Suporte Maromba</span>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.59 2.019 14.13 1.012 11.998 1.012 6.56 1.012 2.135 5.383 2.131 9.813c-.001 1.66.447 3.28 1.298 4.72l-.994 3.63 3.731-.977zm11.517-6.94c-.313-.156-1.854-.915-2.145-1.021-.29-.106-.503-.156-.714.162-.211.318-.82.162-1.004.37-.184.21-.368.423-.553.633-.184.21-.368.21-.68.055-.313-.155-1.32-.486-2.515-1.55-.93-.829-1.558-1.854-1.74-2.165-.184-.31-.02-.479.136-.633.14-.14.313-.365.47-.55.156-.184.21-.312.313-.52.105-.208.052-.39-.026-.547-.079-.156-.714-1.72-.979-2.357-.258-.62-.52-.536-.714-.547-.18-.01-.39-.01-.6-.01-.21 0-.553.078-.842.393-.29.313-1.105 1.08-1.105 2.632s1.133 3.053 1.29 3.262c.157.21 2.23 3.4 5.4 4.767.755.326 1.344.52 1.803.666.76.241 1.45.207 1.996.126.608-.09 1.854-.758 2.118-1.45.264-.693.264-1.29.184-1.41-.079-.12-.29-.21-.603-.36z"/></svg>
+  </a>
+
+  <!-- Scripts Interativos -->
+  <script src="js/script.js"></script>
+</body>
+</html>

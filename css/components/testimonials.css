@@ -1,0 +1,107 @@
+/* --- DEPOIMENTOS (TESTIMONIALS) --- */
+.testimonials-section {
+  padding: 6rem 0;
+  background-color: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, var(--color-neon-red-glow) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.testimonial-card {
+  padding: 2.25rem 1.75rem;
+  border-radius: 8px;
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-neon-red);
+  box-shadow: 0 10px 25px rgba(255, 45, 45, 0.15);
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial-card__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-fast);
+}
+
+.testimonial-card:hover .testimonial-card__avatar {
+  border-color: var(--color-neon-red);
+  box-shadow: var(--glow-red-sm);
+}
+
+.testimonial-card__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card__name {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.testimonial-card__city {
+  font-size: 0.8rem;
+  color: var(--text-gray-mid);
+}
+
+.testimonial-card__rating {
+  color: #ffcc00;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card__comment {
+  font-size: 0.925rem;
+  color: var(--text-gray-light);
+  line-height: 1.6;
+  font-style: italic;
+}

@@ -1,0 +1,112 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1rem 2.25rem;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-normal);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Botão Neon Verde (Principal) */
+.btn--neon-green {
+  color: #000000;
+  background-color: var(--color-neon-green);
+  border: 1px solid var(--color-neon-green);
+  box-shadow: var(--glow-green-sm), inset 0 0 0 0 rgba(0,0,0,0);
+}
+
+.btn--neon-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btn--neon-green:hover::before {
+  left: 100%;
+}
+
+.btn--neon-green:hover {
+  background-color: #000000;
+  color: var(--color-neon-green);
+  box-shadow: var(--glow-green-lg);
+  border-color: var(--color-neon-green);
+  transform: translateY(-3px);
+}
+
+/* Botão Vermelho Intenso (Secundário/Experimento) */
+.btn--neon-red {
+  color: var(--text-white);
+  background-color: transparent;
+  border: 2px solid var(--color-neon-red);
+  box-shadow: inset 0 0 0 0 var(--color-neon-red);
+}
+
+.btn--neon-red:hover {
+  color: #000000;
+  background-color: var(--color-neon-red);
+  box-shadow: var(--glow-red-lg);
+  transform: translateY(-3px);
+}
+
+/* Botão com efeito pulsar */
+.btn--pulse {
+  animation: pulse-glow-green 2s infinite;
+}
+
+@keyframes pulse-glow-green {
+  0% {
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(57, 255, 20, 0.8), 0 0 35px rgba(57, 255, 20, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+  }
+}
+
+.btn--pulse-red {
+  animation: pulse-glow-red 2s infinite;
+}
+
+@keyframes pulse-glow-red {
+  0% {
+    box-shadow: 0 0 8px rgba(255, 45, 45, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(255, 45, 45, 0.8), 0 0 35px rgba(255, 45, 45, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(255, 45, 45, 0.4);
+  }
+}
+
+/* Feedback de Clique */
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Botão Ícone */
+.btn svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover svg {
+  transform: translateX(4px);
+}
