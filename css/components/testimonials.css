@@ -40,12 +40,18 @@
 }
 
 .testimonial-card {
-  padding: 2.25rem 1.75rem;
+  padding: 1.75rem 1.25rem;
   border-radius: 8px;
   transition: var(--transition-normal);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    padding: 2.25rem 1.75rem;
+  }
 }
 
 .testimonial-card:hover {

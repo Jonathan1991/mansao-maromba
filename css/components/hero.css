@@ -151,6 +151,8 @@
   align-items: center;
   gap: 2.5rem;
   transition: var(--transition-normal);
+  overflow-y: auto;
+  padding: 3rem 1.5rem;
 }
 
 .mobile-menu.active {

@@ -24,12 +24,18 @@
 }
 
 .benefit-card {
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.5rem;
   border-radius: 8px;
   transition: var(--transition-normal);
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .benefit-card {
+    padding: 2.5rem 2rem;
+  }
 }
 
 .benefit-card::before {
@@ -247,7 +253,13 @@
 .stats__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .stats__grid {
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 992px) {
